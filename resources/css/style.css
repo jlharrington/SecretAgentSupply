@@ -1,0 +1,164 @@
+/* style.css for Secret Agent Supply */
+/* Updated 2017-08-29 */
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.topbanner {
+  background-color: black;
+  color: white;
+  margin: auto;
+  padding: 0.66rem 0rem;
+}
+
+.topbanner .container {
+  display: flex;
+  align-items: center;
+}
+
+.topbanner img {
+  height: 1.5rem;
+  padding: 0 0.5rem 0 1rem;
+}
+
+.splash {
+  background: url("../../resources/img/moto.jpeg") no-repeat center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.newarrival {
+  background-color: black;
+  color: white;
+  width: 20em;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+
+.newarrival h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.25rem 0;
+  line-height: 1.2em;
+}
+
+.newarrival h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav {
+  background-color: firebrick;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  color: white;
+  padding: 0.75rem 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.item {
+  border: 4px solid black;
+  width: 30%;
+}
+
+.item-img {
+  height: 9rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img img {
+  max-width: 8em;
+}
+
+.desc {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.details {
+  width: 35%;
+}
+
+.title {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+  margin-top: 4rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 47%;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .item.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+
+  .item.watch {
+    display: none;
+  }
+
+  .newarrival {
+    width: 100%;
+    top: 10em;
+  }
+}
